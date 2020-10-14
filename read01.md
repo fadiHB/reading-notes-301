@@ -73,3 +73,34 @@ Mobile devices generally do a pretty decent job of displaying websites these day
 The final, equally important aspect to responsive web design involves flexible media. As viewports begin to change size media doesn’t always follow suit. Images, videos, and other media types need to be scalable, changing their size as the size of the viewport changes.
 
 One quick way to make media scalable is by using the max-width property with a value of 100%. Doing so ensures that as the viewport gets smaller any media will scale down according to its containers width.
+
+# SMACSS 
+
+## What is it?
+
+What is SMACSS?
+SMACSS stands for Scalable and Modular Architecture for CSS and it has 2 core goals.
+
+* Increase the semantic value of a section of html and content
+* Decrease the expectation of a specific html structure
+
+Like Object Oriented CSS, SMACSS is an approach to writing css and html with more emphasis placed on using classes. Unlike OOCSS, it doesn’t suggest using classes for everything. It’s fine with IDs and descendent selectors where appropriate.
+
+At the very core of SMACSS is categorization. By categorizing CSS rules, we begin to see patterns and can define better practices around each of these patterns.
+
+Much like OCCSS, the purpose of this categorization is less code repetition, a more consistent experience, and easier maintenance. Under SMACSS there are 5 general categories of css rules.
+
+* Base — These are your defaults (html, body, h1, ul, etc)
+* Layout — These divide the page into major sections
+* Module — These are the reusable modular components of a design
+* State — These describe how things look when in a particular state (hidden or expanded, active/inactive)
+* Theme — These define things like a color scheme or typographic treatment across a site
+
+Most of us tend to mix styles across all of these categories, which creates complexity. If instead, we can understand the differences in these categories and apply some guidelines to each we can simplify our css.
+
+Jonathan offers a naming convention for working with SMACSS, though he’s quick to point out you don’t need to follow his convention. He does feel that having some consistent naming convention is important.
+
+* Base — Nothing needed
+* Layout — l- or layout- prefixes
+* State — is- prefix as in is-active or is-hidden
+* Module — Modules just use module name ( .callout ) instead of trying to prefix each, * however related modules receive a consistent prefix to help organize them
