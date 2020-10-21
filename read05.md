@@ -16,6 +16,6 @@ Heroku…
 
  Heroku supports the Ruby, Node.js, Python, Java, Go, PHP, and Scala programming languages. This provides easy deployment of existing technologies on Heroku with minimum modifications needed.
 
- ## How Heroku Pricing Works
+## How Heroku Pricing Works
 
 One of the benefits of using a cloud provider like Heroku in the first place is that you pay only for what you use. In the case of Heroku, since they bill in increments of seconds, that’s pretty much exactly what you use.
